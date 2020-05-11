@@ -435,7 +435,7 @@ def mobilenet_v1_arg_scope(
     regularize_depthwise=False,
     batch_norm_decay=0.9997,
     batch_norm_epsilon=0.001,
-    batch_norm_updates_collections=tf.compat.v1.GraphKeys.UPDATE_OPS,
+    batch_norm_updates_collections=tf.GraphKeys.UPDATE_OPS,
     normalizer_fn=slim.batch_norm):
   """Defines the default MobilenetV1 arg scope.
 

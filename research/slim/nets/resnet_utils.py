@@ -228,7 +228,7 @@ def resnet_arg_scope(
     batch_norm_scale=True,
     activation_fn=tf.nn.relu,
     use_batch_norm=True,
-    batch_norm_updates_collections=tf.compat.v1.GraphKeys.UPDATE_OPS):
+    batch_norm_updates_collections=tf.GraphKeys.UPDATE_OPS):
   """Defines the default ResNet arg scope.
 
   TODO(gpapan): The batch-normalization related default values above are
